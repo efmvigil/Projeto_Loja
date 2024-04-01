@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <title>Luna Store</title>
+  </head>
+  <body>
+    <div class="Pagina"><header>
+      <div class="Header-top">
+        <a href="index.html"><img src="IMG/Logo.jpg" alt=""></a>
+        <div class="dropdown">
+          <button class="Botao-menu" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><input type="search" placeholder="Busca"></li>
+            <li><a class="dropdown-item" href="duvidas.html"><ion-icon name="help-circle-outline"></ion-icon> Precisa de ajuda?</a></li>
+            <li><a class="dropdown-item" href="login.html"><ion-icon name="person-circle-outline"></ion-icon> Login</a></li>
+            <li><a class="dropdown-item" href="#"><ion-icon name="cart-outline"></ion-icon> Carrinho</a></li>
+          </ul>
+        </div>
+        <input type="search" placeholder="O que você procura hoje?" class="Menu">
+        <nav class="Menu">
+              <a href="duvidas.html" style="width: 200px;">
+                <ion-icon name="help-circle-outline"></ion-icon>
+                Precisa de ajuda?
+              </a>
+              <a href="login.html">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                Login
+              </a>
+              <a href="#">
+                <ion-icon name="cart-outline"></ion-icon>
+              </a>
+          </nav>
+      </div>
+      <div class="Header-bottom">
+        <ul>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Masculino</a></li>
+          <li><a href="#">Feminino</a></li>
+          <li><a href="#">Infantil</a></li>
+          <li><a href="#">Acessórios</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="faq">
+      <h2>PERGUNTAS FREQUENTES</h2>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item p-3">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Como faço para realizar uma compra?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body p-4">Para efetuar uma compra em nossa loja online, basta seguir os passos simples do nosso processo de checkout. Selecione os produtos desejados, adicione ao carrinho, e prossiga para a finalização da compra, fornecendo as informações necessárias.</div>
+          </div>
+        </div>
+        <div class="accordion-item p-3">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Como funciona o processo de troca ou devolução?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body p-4">Caso o produto não tenha servido, você pode solicitar a troca por outra cor ou tamanho, basta seguir 3 passos. Confira: <br><br>
+              1 - Acesse a sua conta em nosso site e clique em "Meus Pedidos". Na lista, escolha o pedido e veja se ele já está disponível para troca, se estiver, é só escolher o produto e clicar em “Trocar produto”. <br><br>
+              2 - Escolha o motivo nas opções exibidas. É importante, para os casos de defeito, descrever com detalhes a falha encontrada. <br><br>
+              3 - Depois, é só finalizar e aguardar o e-mail enviado para o endereço cadastrado, com o código de postagem e outras orientações sobre o processo de troca.</div>
+          </div>
+        </div>
+        <div class="accordion-item p-3">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              E se eu receber um produto com defeito?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body p-4">Estamos comprometidos em garantir a qualidade de nossos produtos. Caso receba um item com defeito, entre em contato conosco imediatamente. Nossa equipe resolverá o problema o mais rápido possível, oferecendo opções de troca ou reembolso.</div>
+          </div>
+        </div>
+        <div class="accordion-item p-3">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+              Como vocês utilizam as informações pessoais dos clientes?
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body p-4">Respeitamos a privacidade de nossos clientes. Todas as informações pessoais coletadas são utilizadas exclusivamente para processar pedidos, personalizar sua experiência de compra e fornecer informações sobre nossos produtos. Consulte nossa política de privacidade para mais detalhes.</div>
+          </div>
+        </div>
+        <div class="accordion-item p-3">
+          <h2 class="accordion-header" id="flush-headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+              As informações do meu cartão de crédito estão seguras?
+            </button>
+          </h2>
+          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body p-3">Sim, garantimos a segurança de suas informações financeiras. Utilizamos tecnologias avançadas de criptografia para proteger os dados do seu cartão de crédito durante as transações.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contato">
+      <div class="Texto-contato">
+        <h3>Entre em contato conosco</h3>
+        <span>
+          Não encontrou sua pergunta? Abaixo listamos as formas de contato
+          disponíveis em nossa loja. Estamos ansiosos em lhe atender da melhor
+          maneira possível.
+        </span>
+        <h3>Central de Atendimento ao Cliente</h3>
+        <span>(51) 99629-4878</span>
+        <h3>E-mail</h3>
+        <span>contato@lunastore.com.br</span>
+        <h3>Horário de Atendimento</h3>
+        <span>
+          De Segunda a Sexta das 08h às 20h. Sábado das 08h às 18h. Exceto feriados nacionais.
+        </span>
+    </div>
+      <div class="Formulario-contato">
+        <h3>Formulário de Contato</h3>
+        <form action="enviar_mensagem.php" method="post">
+          <label for="Nome">Nome</label>
+          <input type="text" />
+          <label for="E-mail">E-mail</label>
+          <input type="email" />
+          <label for="Telefone">Telefone</label>
+          <input type="tel" />
+          <label for="Assunto">Assunto</label>
+          <input type="text" />
+          <label for="Mensagem">Mensagem</label>
+          <textarea name="Mensagem" id="" cols="30" rows="6"></textarea>
+          <input type="submit" value="Enviar"/>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="Vantagens">
+        <div>
+          <img src="IMG/truck-fast-outline.svg" alt="">
+          <h3>Entrega Expressa</h3>
+          <p>para todo o Brasil</p>
+        </div>
+        
+        <div id="Compra-Segura">
+          <img src="IMG/shield-lock-outline.svg" alt="">
+          <h3>Compra Segura</h3>
+          <p>ambiente protegido</p>
+        </div>
+        
+        <div>
+          <img src="IMG/credit-card-outline.svg" alt="">
+          <h3>Em Até 10x Sem Juros</h3>
+          <p>no cartão de crédito</p>
+        </div>
+      </div>
+      <hr>
+      <div class="accordion hidden" id="accordionFooter">
+        <div class="accordion-item">
+          <h2 class="accordion-header p-2" id="header1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" id="header1">
+              Institucional
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <ul class="accordion-body">
+              <li><a href="#">Sobre Nós</a></li>
+              <li><a href="#">Política de Privacidade</a></li>
+              <li><a href="#">Depoimentos de Clientes</a></li>
+              <li><a href="#">Trabalhe Conosco</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header p-2" id="header1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="header1">
+              Atendimento
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <ul class="accordion-body">
+              <li>
+                <img src="IMG/icons8-whatsapp.svg" alt="" />
+                (51)99629-4878
+              </li>
+              <li>
+                <img src="IMG/baseline-email.svg" alt="" />
+                contato@lunastore.com.br
+              </li>
+              <li>
+                <img src="IMG/clock-thin.svg" alt="" />
+                Horários de Funcionamento:
+                De Segunda a Sexta das 08h às 20h. Sábado das 08h às 18h. Exceto feriados nacionais.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header p-2" id="header1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="header1">
+              Redes Sociais
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <nav class="accordion-body">
+              <a href="https://facebook.com" class="L-facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+              <a href="https://instagram.com" class="L-instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+              <a href="https://youtube.com" class="L-youtube">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+              <a href="https://twitter.com" class="L-twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </nav>
+          </div>
+        </div>
+        <div class="accordion-item"> 
+          <h2 class="accordion-header p-2" id="header1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="header1">
+              Formas de Pagamento
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <img src="IMG/visa.svg" alt="" />
+              <img src="IMG/mastercard.svg" alt="" >
+              <img src="IMG/amex.svg" alt="" />
+              <img src="IMG/dinersclub.svg" alt="" >
+              <img src="IMG/elo.svg" alt="" />
+              <img src="IMG/hipercard.svg" alt="" />
+              <img src="IMG/icons8-boleto-bankario-48.png" alt="" />
+              <img src="IMG/PIX[2].png" alt="" />
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="Footer-bottom" id="Institucional">
+        <h3>Institucional</h3>
+        <ul>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+          <li><a href="#">Depoimentos de Clientes</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+      <div class="Footer-bottom" id="Atendimento">
+        <h3>Atendimento</h3>
+        <ul>
+          <li>
+            <img src="IMG/icons8-whatsapp.svg" alt="" />
+            (51)99629-4878
+          </li>
+          <li>
+            <img src="IMG/baseline-email.svg" alt="" />
+            contato@lunastore.com.br
+          </li>
+          <li style="width: 250px;">
+            <img src="IMG/clock-thin.svg" alt="" />
+            Horários de Funcionamento:
+            De Segunda a Sexta das 08h às 20h. Sábado das 08h às 18h. Exceto feriados nacionais.
+          </li>
+        </ul>
+      </div>
+      <div class="Footer-bottom" id="Redes-Sociais">
+        <h3>Redes Sociais</h3>
+        <nav>
+          <a href="https://facebook.com" class="L-facebook">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://instagram.com" class="L-instagram">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://youtube.com" class="L-youtube">
+            <ion-icon name="logo-youtube"></ion-icon>
+          </a>
+          <a href="https://twitter.com" class="L-twitter">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </nav>
+      </div>
+
+      <div class="Footer-bottom" id="Pagamentos">
+      <h3>Formas de Pagamento</h3>
+          <div>
+            <img src="IMG/visa.svg" alt="" />
+            <img src="IMG/mastercard.svg" alt="" >
+            <img src="IMG/amex.svg" alt="" />
+            <img src="IMG/dinersclub.svg" alt="" >
+          </div>
+          <div>
+            <img src="IMG/elo.svg" alt="" />
+            <img src="IMG/hipercard.svg" alt="" />
+            <img src="IMG/icons8-boleto-bankario-48.png" alt="" />
+            <img src="IMG/PIX[2].png" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer></div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  <script src="script.js"></script>
+  </body>
+</html>

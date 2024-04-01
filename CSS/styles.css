@@ -1,0 +1,741 @@
+.Pagina {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h2 {
+  margin: 0 auto;
+  width: 300px;
+}
+
+ul {
+  list-style: none;
+}
+button {
+  font-family: "Signika Negative", sans-serif;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  background-color: #000;
+}
+
+#banner img {
+  max-width: 1200px;
+  max-height: 600px;
+  margin: 0 auto;
+}
+
+/*CABEÇALHO*/
+.Header-top {
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Header-top img {
+  margin-left: 200px;
+}
+
+.Header-top input[type="search"]:not(.dropdown input) {
+  width: 50%;
+  height: 60px;
+  margin-left: 150px;
+  min-width: 275px;
+}
+
+.Header-top nav {
+  width: 50%;
+  display: flex;
+  margin-left: 100px;
+}
+
+.Menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  margin-right: 50px;
+}
+
+.Header-top ion-icon {
+  font-size: 30px;
+  margin-right: 5px;
+}
+.Header-bottom {
+  text-align: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+.Header-bottom li {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 15px;
+}
+
+.Header-bottom li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.dropdown-menu li a {
+  display: flex;
+}
+
+.dropdown-menu input {
+  width: 170px;
+  margin-left: 10px;
+}
+
+.Botao-menu {
+  cursor: pointer;
+  display: none;
+  background-color: #000;
+  border: #000;
+}
+
+/*GALERIA OFERTAS*/
+#ofertas {
+  background-color: #fff;
+}
+
+#ofertas h2 {
+  width: 390px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+#ofertas .vitrine {
+  margin: 0 auto;
+  min-width: 400px;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.produto {
+  background-color: #fff;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 500px;
+  transition: 0.3s;
+  flex-basis: 385px;
+  flex-shrink: 1;
+  flex-grow: 1;
+  justify-content: center;
+  /* background-color: gray; */
+}
+
+.produto form {
+  display: none;
+  margin-top: 10px;
+  transition: 5s;
+}
+
+.produto select,
+.produto input {
+  width: 20%;
+  margin-right: 10px;
+}
+
+.produto form span {
+  font-size: 18px;
+}
+
+.produto img {
+  margin: 0 auto;
+}
+
+.produto h3 {
+  font-size: 25px;
+}
+
+.produto:hover {
+  box-shadow: 2px 2px 15px -1px #c2b9a9;
+}
+
+.produto:hover button,
+.produto:hover form {
+  display: block;
+}
+
+.figure {
+  position: relative;
+  max-width: 100%;
+}
+.figure img {
+  max-width: 240px;
+  max-height: 160px;
+}
+.figure img.Sirv.image-hover {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.produto:hover img.Sirv.image-hover {
+  opacity: 1;
+}
+
+.produto button {
+  text-transform: uppercase;
+  font-size: medium;
+  color: #fff;
+  background-color: #000;
+  height: 50px;
+  padding: 0.7rem;
+  border-radius: 20px;
+  font-family: "Signika Negative", sans-serif;
+  display: none;
+  width: 60%;
+  margin: 0 auto;
+  transition: display 5s;
+}
+
+.produto ion-icon {
+  color: goldenrod;
+}
+
+.produto * {
+  margin-bottom: 10px;
+}
+
+.small {
+  font-size: 5px;
+  text-decoration: line-through;
+  width: 50%;
+}
+
+/*LOGIN*/
+.Conta-Site {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#Conta {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+#Conta h3 {
+  width: 110%;
+}
+
+.Linha {
+  border-left: 2px solid #000;
+  height: 300px;
+  width: 2px;
+}
+.Login {
+  width: 20%;
+}
+.Cadastro {
+  width: 20%;
+}
+.Login form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.Cadastro form {
+  display: flex;
+  flex-direction: column;
+}
+
+#Conta form input:not([type="submit"]) {
+  outline: 1px solid;
+  width: 100%;
+  min-width: 240px;
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+#Conta form input[type="submit"] {
+  text-transform: uppercase;
+  font-size: medium;
+  color: #fff;
+  background-color: #000;
+  width: 60%;
+  min-width: 140px;
+  height: 50px;
+  padding: 0.7rem;
+  border-radius: 20px;
+  font-family: "Signika Negative", sans-serif;
+}
+
+.Conta-Redes {
+  margin: 0 auto;
+  flex-basis: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.Conta-Redes span {
+  text-align: center;
+}
+
+.Botoes-Redes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.Conta-Redes button {
+  background-color: #fff;
+}
+
+/*DUVIDAS*/
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#faq h2:not(.accordion h2) {
+  width: 100%;
+  margin-top: 70px;
+  text-align: center;
+}
+
+#faq .accordion {
+  width: 50%;
+  margin-bottom: 80px;
+  font-size: 15px;
+}
+
+#faq .accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+}
+
+#faq .accordion-button {
+  font-size: 20px !important;
+}
+
+#faq .accordion-header {
+  width: 100%;
+}
+
+#faq button.accordion-button:focus {
+  box-shadow: none;
+  background-color: lightgray !important;
+}
+
+#faq .accordion-body {
+  text-align: justify;
+  padding: 0 !important;
+}
+#contato {
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  flex-wrap: wrap;
+}
+
+.Texto-contato span {
+  text-align: justify;
+  width: 90%;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+
+.Texto-contato {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.Formulario-contato {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contato form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  margin-bottom: 50px;
+  min-width: 300px;
+}
+
+#contato form input:not([type="submit"]) {
+  height: 50px;
+  border-radius: 10px;
+}
+
+#contato form input[type="submit"] {
+  width: 100px;
+  margin: 0 auto;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+  border-radius: 15px;
+}
+
+#contato form textarea {
+  border-radius: 30px;
+  border: 2px solid #000;
+}
+
+#contato form * {
+  margin-bottom: 10px;
+}
+
+/*RODAPÉ*/
+footer {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding-bottom: 50px;
+}
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+footer ion-icon {
+  font-size: 35px;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.Vantagens {
+  padding-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.Vantagens img {
+  width: 70px;
+}
+
+#Compra-Segura {
+  margin: 0 20%;
+}
+
+.Footer-bottom {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin: 0 5%;
+}
+
+.L-facebook,
+.L-instagram,
+.L-youtube,
+.L-twitter {
+  transition: color 0.2s;
+}
+
+.L-facebook:hover {
+  color: #3b5998;
+}
+
+.L-twitter:hover {
+  color: #00aced;
+}
+
+.L-youtube:hover {
+  color: #dd4b39;
+}
+
+.L-instagram:hover {
+  color: #d62976;
+}
+
+#Redes-Sociais nav a {
+  display: inline-block;
+}
+
+#Pagamentos {
+  text-align: center;
+}
+
+#Pagamentos img {
+  width: 48px;
+  height: 30px;
+  background-color: #fff;
+  outline: 1px solid gray;
+}
+
+.hidden {
+  display: none;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 1600px) {
+  .Header-top img {
+    margin-left: 0;
+  }
+
+  .Header-top input[type="search"]:not(.dropdown input) {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .Header-top nav {
+    flex-direction: column;
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 990px) {
+  .Header-top nav {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 910px) {
+  .Header-top nav {
+    padding-left: 0;
+    margin-left: 50px;
+  }
+  .Header-top input[type="search"]:not(.dropdown input) {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 790px) {
+  .Header-bottom ul li {
+    display: block;
+    text-align: center;
+  }
+
+  .Header-top {
+    justify-content: space-between;
+  }
+
+  .Header-top img {
+    margin-left: 0;
+  }
+
+  .Menu {
+    display: none !important;
+  }
+
+  .Botao-menu {
+    display: block;
+  }
+
+  .Botao-menu ion-icon {
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .Login {
+    width: 200px;
+  }
+
+  .Cadastro {
+    width: 200px;
+  }
+
+  #contato {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #faq .accordion {
+    width: 75%;
+  }
+
+  .Formulario-contato {
+    width: 100%;
+  }
+  #contato form {
+    width: 50%;
+  }
+}
+
+@media (max-width: 765px) {
+  footer .accordion {
+    width: 100%;
+  }
+
+  footer .accordion-header {
+    margin-left: 0;
+    width: 100%;
+    font-family: "Signika Negative", sans-serif;
+  }
+
+  footer .accordion-item {
+    background-color: #f4f4f4;
+    border-top: 0px;
+  }
+
+  footer #collapseFour .accordion-body {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer #collapseFour img {
+    width: 48px;
+    height: 30px;
+  }
+
+  footer .accordion-body {
+    background-color: #f4f4f4;
+    font-size: 20px;
+  }
+
+  footer #header1 {
+    background-color: #f4f4f4;
+    font-size: 22px;
+  }
+
+  footer ul li {
+    text-align: justify;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  footer nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  footer ion-icon {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 619px) {
+  #faq .accordion {
+    width: 100%;
+  }
+
+  .Texto-contato {
+    width: 90%;
+  }
+
+  .Texto-contato span {
+    width: 100%;
+  }
+
+  .Conta-Site {
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .Linha {
+    display: none;
+  }
+
+  .Footer-bottom {
+    margin: 0 auto;
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 25px;
+  }
+
+  #Institucional ul {
+    padding-left: 0;
+  }
+
+  #Institucional li {
+    width: 500px;
+  }
+
+  #Atendimento ul {
+    padding-left: 0;
+  }
+
+  #Atendimento li {
+    width: 500px;
+  }
+
+  #Pagamentos {
+    text-align: left;
+  }
+}
+
+@media (max-width: 514px) {
+  .Vantagens {
+    flex-direction: column;
+  }
+  .Vantagens div {
+    width: 100%;
+  }
+  #Compra-Segura {
+    margin: 0 auto;
+  }
+
+  footer .accordion-body {
+    width: 100%;
+  }
+
+  footer ul li {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 454px) {
+  .Login {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 410px) {
+  .Login h3,
+  .Cadastro h3 {
+    width: 200px;
+  }
+
+  h2:not(.accordion h2) {
+    width: 100%;
+  }
+
+  #Pagamentos {
+    width: 60%;
+  }
+}
+
+@media (max-width: 409px) {
+  .Login {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 404px) {
+  .Login {
+    margin-bottom: 25px;
+  }
+
+  #contato form {
+    min-width: 270px;
+  }
+
+  #collapseFour .accordion-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 364px) {
+  .Botoes-Redes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Botoes-Redes button {
+    width: 60%;
+    min-width: 218px;
+  }
+}
